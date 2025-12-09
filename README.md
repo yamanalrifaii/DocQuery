@@ -101,7 +101,6 @@ npm install
 
 3. **Set environment variables (optional):**
 ```bash
-# Create .env.local if backend is on different port
 echo "REACT_APP_API_URL=http://localhost:8000" > .env.local
 ```
 
@@ -111,23 +110,6 @@ npm start
 ```
 
 The UI will be available at `http://localhost:3000`
-
-## Usage Examples
-
-### Command Line (cURL)
-
-**Upload a document:**
-```bash
-curl -X POST http://localhost:8000/upload \
-  -F "file=@document.pdf"
-```
-
-**Ask a question:**
-```bash
-curl -X POST http://localhost:8000/ask \
-  -H "Content-Type: application/json" \
-  -d '{"question": "What is the main topic?"}'
-```
 
 
 ## Supported File Types
